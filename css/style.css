@@ -1,0 +1,285 @@
+
+/* Start Global */
+*{
+	padding: 0;
+	margin: 0;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	-o-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+body{
+	font-family: 'Raleway', sans-serif;
+}
+
+/* End Global */
+
+/* Start Navbar */
+.change{
+	z-index: 9;
+	position: fixed;
+}
+
+.nav-bg{
+	background-color: #fff;
+	 box-shadow: 0 0 11px rgba(0, 0, 0, 0.15);
+}
+
+
+/* Collapsed Navbar Background Color */
+@media (max-width: 767px) {
+  #navbarNav
+    {
+        background-color:#fff;
+    }
+
+     #navbarNav li a
+    {
+        margin-left: 8px;
+    }
+    .navbar-light .navbar-nav .nav-link{
+    	color: #000!important;
+    }
+}
+
+.navbar-light .navbar-brand{
+	color: #fff;
+	font-size: 25px;
+	transition: all 0.4s ease-in-out;
+}
+
+.navbar-light .navbar-nav .nav-link{
+	color: #fff;
+	font-size: 20px;
+	margin-right: 5px;
+	transition: all 0.4s ease-in-out;
+}
+
+/* End Navbar */
+
+/* Start Header */
+
+.header{
+	background-image: url('../img/header.jpg');
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center;
+	position: relative;
+	-webkit-clip-path: polygon(50% 0%, 100% 0, 100% 75%, 50% 100%, 0% 75%, 0 0);
+	clip-path: polygon(50% 0%, 100% 0, 100% 75%, 50% 100%, 0% 75%, 0 0);
+}
+.header .overlay{
+	width: 100%;
+	height: 100%;
+	background-color: rgba(136, 136, 136, 0.7);
+}
+
+
+.header   .caption{
+	text-align: center;
+	color: #fff;
+	line-height: 1.8;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+
+.header  .caption h2{
+	font-size: 60px;
+	font-weight: 500;
+}
+
+.header  .caption p{
+	font-size: 40px;
+	font-weight: 400;
+}
+
+/* End Header */
+
+/* Start About Me */
+
+.about-me h2{
+	text-align: center;
+	position: relative;
+}
+
+.about-me h2:before{
+	content: "A";
+    position: absolute;
+    top: -52%;
+    left: 0;
+    right: 0;
+    opacity: 0.09;
+    font-size: 60px;
+    font-weight: 600;
+}
+
+.about-me span{
+	line-height: 2;
+}
+.about-me .progress{
+	margin-bottom: 8px;
+}
+.about-me .progress .progress-bar{
+	background-color: #635f5f;
+}
+
+.about-me .great{
+	font-size: 35px;
+	font-weight: 600;
+	font-style: italic;
+}
+
+.about-me p{
+	font-size: 15px;
+	line-height: 1.8;
+	color: #5c5c5c;
+}
+
+/* End About Me */
+
+/* Start My Work */
+
+.my-work h2{
+	text-align: center;
+	position: relative;
+}
+
+.my-work h2:before{
+	content: "W";
+    position: absolute;
+    top: -52%;
+    left: 0;
+    right: 0;
+    opacity: 0.09;
+    font-size: 60px;
+    font-weight: 600;
+}
+
+.my-work .card{
+	position: relative;
+}
+.my-work .card img{
+	width: 100%;
+	max-width: 100%;
+	height: 100%;
+	max-height: 100%;
+	filter: gray;
+	-webkit-filter: grayscale(1);
+	-moz-filter: grayscale(1);
+	-o-filter: grayscale(1);
+	filter: grayscale(1);
+	transition: all 0.4s ease-in-out;
+}
+
+.my-work .card img:hover{
+	filter: none;
+	-webkit-filter: grayscale(0);
+	-moz-filter: grayscale(0);
+	-o-filter: grayscale(0);
+	filter: grayscale(0);
+	transform: translate(1,1);
+}
+
+.my-work .card-body .btn-primary{
+	background-color: #fff;
+	color: #635f5f;
+	border-color: #635f5f;
+	transition: all 0.5s ease-in-out;
+
+}
+
+.my-work .card-body .btn-primary:hover{
+	background-color: #635f5f;
+	color: #fff;
+	border-color: #635f5f
+}
+
+.btn-primary:focus {
+    box-shadow: 0 0 0 0.2rem rgba(99,95,95,.5);
+}
+
+/* End My Work */
+
+/* Scroll To Top */
+
+#scroll-top{
+	position: fixed;
+	bottom: 10px;
+	right: 30px;
+	cursor: pointer;
+	transition: all 0.4s ease-in-out;
+	display: none;
+}
+
+#scroll-top:hover{
+	color: #635f5f;
+}
+
+/* Start Contact Me*/
+.contact-me h2{
+	text-align: center;
+	position: relative;
+}
+
+.contact-me h2:before{
+	content: "C";
+    position: absolute;
+    top: -52%;
+    left: 0;
+    right: 0;
+    opacity: 0.09;
+    font-size: 60px;
+    font-weight: 600;
+}
+
+.contact-me .info i{
+	padding-right: 5px;
+	color: #555;
+}
+
+.contact-me .info span{
+	font-weight: 400;
+	font-size: 18px;
+}
+
+.contact-me .info p{
+	font-size: 16px;
+	padding-left: 15px;
+}
+
+.contact-me .social i{
+	padding-right: 5px;
+	color: #555;
+
+	transition: all 0.4s ease-in-out;
+}
+
+.contact-me .social i:hover{
+	transform: rotate(360deg);
+}
+
+.contact-me .social .fa-linkedin-in:hover{
+	color: #0077b5;
+}
+
+.contact-me .social .fa-github:hover{
+	color: #6cc644;
+}
+/* End Contact Me*/
+
+/* Start Footer */
+
+.footer{
+	background-color: rgba(0, 0, 0, 0.7);
+	height: 60px;
+}
+
+.footer p{
+	color: #fff;
+	text-align: center;
+	line-height: 3;
+}
+/* End Footer */
